@@ -9,7 +9,7 @@
 
 ## Create React native app 💡
 
-    We can use either EXPO or React. native CLI
+    We can use either EXPO or React native CLI
     
 
 ### Expo offical doc:💡
