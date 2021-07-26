@@ -1,5 +1,4 @@
-# Connected-city🔥🔥🔥
-
+# Connected-city Simplon ville b🔥🔥🔥
 
 
 
@@ -11,6 +10,7 @@
 ## Create React native app 💡
 
     We can use either EXPO or React. native CLI
+    
 
 ### Expo offical doc:💡
 
