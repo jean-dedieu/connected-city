@@ -14,7 +14,7 @@
 
 ### Expo offical doc:💡
 
-    https://docs.expo.io/
+ https://docs.expo.io/
 
 
 
@@ -32,4 +32,15 @@
 
 
 
-Run React native expo project on machine and Phone
+### Run React native expo project on machine and Phone
+
+     On iPhone: download expo app, then s an the React Native App QR Code
+     
+     On Android: you can use Android Emulator
+     
+     Download android studio here down:
+     
+   https://developer.android.com/studio
+
+
+
