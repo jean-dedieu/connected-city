@@ -32,7 +32,7 @@
 
 
 
-### Run React native expo project on machine and Phone
+### Run React native expo project on machine and Phone ⚽
 
      On iPhone: download expo app, then s an the React Native App QR Code
      
