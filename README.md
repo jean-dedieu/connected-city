@@ -32,3 +32,4 @@
 
 
 
+Run React native expo project on machine and Phone
