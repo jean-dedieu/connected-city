@@ -41,6 +41,8 @@
      Download android studio here down:
      
    https://developer.android.com/studio
+   
+    Application home: CMD + M
 
 ## Application wireframes and wireflows 😎 😎
 
