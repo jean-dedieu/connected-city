@@ -1,12 +1,21 @@
 import React from 'react';
-import { View, Text, StyleSheet, Platform } from 'react-native';
+import { View, Text, StyleSheet, Platform, FlatList } from 'react-native';
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 import HeaderButton from '../components/HeaderButton';
+import { useSelector } from 'react-redux';
+import { render } from 'react-dom';
+import AlertItem from '../components/AlertItem';
 
 const AlertsListScreen = props => {
-        return (<View>
-            <Text>Toutes les alertes</Text>
-        </View>
+        const alertPlaces = useSelector(state => state.alertPlaces.alertPlaces);
+        return (<FlatList
+                 data={alertPlaces}
+                 keyExtractor={ item => item.id}
+                 renderItem={itemData => <AlertItem image={null} title={itemData.item.title} address={null} onSelect={() => {
+                         props.navigation.navigate('AlertDetail', {alertTitle: itemData.item.title, alertId: itemData.item.id});
+                 }}/>
+                }
+                />
         );
 };
 

@@ -1,14 +1,37 @@
-import React from 'react';
-import { ScrollView, View, Button, Text,TextInput, StyleSheet } from 'react-native';
+import React, {useState} from 'react';
+import { ScrollView, View, Button, Text,TextInput, StyleSheet, ShadowPropTypesIOS } from 'react-native';
+import { useDispatch } from 'react-redux';
 import Colors from '../constants/Colors';
+import * as alertsPlacesActions from '../store/alerts-places-actions';
 
 const NewAlertScreen = props => {
+    const [titleValue, setTitleValue] = useState('');
+    const dispatch = useDispatch();
+
+    const titleChangeHandler = text => {
+        //next: add validation
+        setTitleValue(text);
+    };
+
+ /*** Make sure the new added alert will be save
+  * @returns new Alert
+  */
+    const saveAlertHandler = () => {
+        dispatch(alertsPlacesActions.addAlert(titleValue));
+        //get redicted after adding new alert
+        ShadowPropTypesIOS.navigation.goBack();
+
+    };
     return (
         <ScrollView>
         <View style={styles.form}>
         <Text style={styles.label}>Votre nouvel alerte</Text>
-        <TextInput style={styles.TextInput}/>
-        <Button title="Envoyer >" color={Colors.primary} onPress={() => {}}/>
+        <TextInput style={styles.TextInput} onChangeText={titleChangeHandler} value={titleValue}/>
+        <Button 
+            title="Envoyer >" 
+            color={Colors.primary} 
+            onPress={saveAlertHandler}
+            />
       </View>
         </ScrollView>     
     );
