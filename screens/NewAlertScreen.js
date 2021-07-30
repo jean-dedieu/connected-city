@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { ScrollView, View, Button, Text,TextInput, StyleSheet, ShadowPropTypesIOS } from 'react-native';
+import { ScrollView, View, Button, Text,TextInput, StyleSheet, ShadowPropTypesIOS} from 'react-native';
 import { useDispatch } from 'react-redux';
 import Colors from '../constants/Colors';
 import * as alertsPlacesActions from '../store/alerts-places-actions';
@@ -14,12 +14,12 @@ const NewAlertScreen = props => {
     };
 
  /*** Make sure the new added alert will be save
-  * @returns new Alert
+  * returns new Alert
   */
     const saveAlertHandler = () => {
         dispatch(alertsPlacesActions.addAlert(titleValue));
         //get redicted after adding new alert
-        ShadowPropTypesIOS.navigation.goBack();
+        props.navigation.goBack();
 
     };
     return (

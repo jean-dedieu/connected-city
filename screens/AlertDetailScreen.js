@@ -12,7 +12,7 @@ const AlertDetailScreen = props => {
 
 AlertDetailScreen.navigationOptions = navData => {
     return {
-        headerTitle: navData.navigation.getParam('alertTitle');
+        headerTitle: navData.navigation.getParam('alertTitle')
     };
 };
 const styles = StyleSheet.create({});
