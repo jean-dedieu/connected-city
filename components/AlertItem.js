@@ -8,6 +8,7 @@ const AlertItem = props => {
       <Image style={styles.image} source={{ uri: props.image }} />
       <View style={styles.infoContainer}>
         <Text style={styles.title}>{props.title}</Text>
+        <Text style={styles.description}>{props.description}</Text>
         <Text style={styles.address}>{props.address}</Text>
       </View>
     </TouchableOpacity>
@@ -38,6 +39,11 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start'
   },
   title: {
+    color: 'black',
+    fontSize: 18,
+    marginBottom: 5
+  },
+  description: {
     color: 'black',
     fontSize: 18,
     marginBottom: 5

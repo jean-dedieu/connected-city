@@ -7,13 +7,22 @@ import ReduxThunk from 'redux-thunk';
 //import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 /**Import alerts navigation
  * 
- * @returns Alerts navigation
+ * return Alerts navigation
  */
 import AlertsNavigator from './navigation/AlertsNavigator';
-import alertPlacesReducer from './store/alert-places-reducer';
+import alertsReducer from './store/alerts-reducer';
+//calling the db initialisation when the app starts up
+import { init } from './helpers/db';
+
+init().then(() => {
+  console.log('Initialized data base');
+}).catch(err => {
+  console.log('Initializing db failed');
+  console.log(err);
+});
 
 const rootReducer = combineReducers({
-  alertPlaces: alertPlacesReducer
+  alerts: alertsReducer
 });
 
 const store = createStore(rootReducer, applyMiddleware(ReduxThunk));
