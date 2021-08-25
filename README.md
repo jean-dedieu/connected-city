@@ -34,9 +34,9 @@
 
 ### Run React native expo project on machine and Phone ⚽
 
-     On iPhone: download expo app, then s an the React Native App QR Code
+     On iPhone: you can use iOS Simulator or download Expo Go App then scan the React Native App QR Code with camera
      
-     On Android: you can use Android Emulator
+     On Android: you can use Android Emulator or also download expo Go and scan the QR code via expo App
      
      Download android studio here down:
      
