@@ -12,5 +12,5 @@ web-build/
 # macOS
 .DS_Store
 
-precisions.txt
-env.js
+precisions.txt*
+env.js*
