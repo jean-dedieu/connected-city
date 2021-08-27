@@ -13,6 +13,7 @@ import * as Permissions from "expo-permissions";
 import Colors from "../constants/Colors";
 import MapPreview from "./MapPreview";
 
+
 const LocationPicker = (props) => {
   const [isFetching, setIsFetching] = useState(false);
 
@@ -22,7 +23,7 @@ const LocationPicker = (props) => {
    * @returns  user permissin to acces his localisation
    */
   const verifyPermissions = async () => {
-    const result = await Permissions.askAsync(Permissions.LOCATION);
+    const result = await Permissions.askAsync(Permissions.LOCATION_FOREGROUND);
     if (result.status !== "granted") {
       Alert.alert(
         " Permissions insuffisantes",
