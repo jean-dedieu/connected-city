@@ -3,6 +3,26 @@
 
 
 
+## Requirements to run this app 💡
+
+   Android studio or Expo Go application installed in your android OS
+   
+   Expo installed in Ios OS 
+
+
+## Run this app 💡
+
+     Clone the repository
+
+     Do npm install
+
+     Finally run npm start
+     
+     The app will run in your default browser at 19200 port
+     
+     It will then display a QR code that your can scan with your Ios Téléphone Camera or With Android Expo Go App
+
+
 
 ## Important notes taken throughout this programming project 🖊️🖊️
 
