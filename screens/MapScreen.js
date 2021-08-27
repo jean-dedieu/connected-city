@@ -1,11 +1,12 @@
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import React from "react";
+import { View, Text, StyleSheet } from "react-native";
 
-const MapScreen = props => {
-    return (<View>
-        <Text>Carte alerte</Text>
+const MapScreen = (props) => {
+  return (
+    <View>
+      <Text>Carte alerte</Text>
     </View>
-    );
+  );
 };
 
 const styles = StyleSheet.create({});

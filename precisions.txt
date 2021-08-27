@@ -1,1 +1,5 @@
-places => alertPlaces
+places => alerts
+
+Google Maps Api
+
+AIzaSyDG-8-LYq_6MgbEgJVx3gJ-4xVzX-XyJdc
